@@ -1,22 +1,27 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<link rel="stylesheet" href="sample.css">
-<title>HTML&CSSの練習</title>
-</head>
-<body>
-<h1 class="title">はしもとです！！</h1>
-<div>
-    一つ目のコンテナ
-</div>
+<html lang="ja">
 
-<div>
-    <form oninput="plus.value = Number(jpeg.alue) + Number(k.value);">
-        <input type="number" name="jpeg"value="1"size="4"> ＋ 
-        <input type="number" name="k"value="1"size="4"> ＝ 
-        </form>
-        <output name="plus"for="jpeg k">2</output>
-</div>
+<head>
+    <meta charset="UTF-8">
+    <title>フォームに入力された数値の取得</title>
+</head>
+
+<body>
+    <form>
+        <label for="textForm1">数値1: </label>
+        <input type="text" id="textForm1">
+
+        <label for="textForm2">数値2: </label>
+        <input type="text" id="textForm2">
+
+        <button id="button">足す</button>
+    </form>
+
+    <label for="resultForm">計算結果: </label>
+    <input type="text" id="resultForm">
 </body>
+
+<script src="test.js">
+</script>
+
 </html>
